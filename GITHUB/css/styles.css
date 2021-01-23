@@ -1,0 +1,192 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+/* -----------------------------VARIABLES----------------------------- */
+nav {
+  background-image: linear-gradient(to right, #e0dcdc, #70706f);
+}
+nav .nav-link:hover {
+  border: solid 1px;
+  border-color: #47c7dd;
+  border-radius: 3%;
+  font-size: 20px;
+  transition: all 700ms ease;
+}
+
+.card {
+  width: auto;
+  margin: auto;
+}
+
+/* -----------------------------SCROLL----------------------------- */
+.animado {
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.mostrarArriba {
+  animation: mostrarArriba 1.5s;
+}
+
+@keyframes mostrarArriba {
+  0% {
+    transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* -----------------------------BODY----------------------------- */
+body {
+  background-image: linear-gradient(to right, #e0dcdc, #70706f);
+}
+body .row h2 {
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.carousel, .carousel-inner {
+  max-height: 800px;
+}
+
+.btn {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.titulos {
+  padding: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.titulos:hover {
+  transition: all 700ms ease;
+  color: #47c7dd;
+  text-decoration: underline;
+}
+
+.titulos__logros__parrafo {
+  padding: 10px;
+}
+
+/* -----------------------------CONTACTO----------------------------- */
+.formulario {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 7px 14px 40px #000;
+}
+
+.form-control {
+  background: #bdb9b9;
+}
+
+/* -----------------------------HORARIOS----------------------------- */
+#horarios {
+  padding: 8rem;
+}
+
+/*----------------------------- FOOTER ----------------------------- */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 17px;
+  display: grid;
+  justify-items: center;
+  padding-bottom: 1em;
+  margin-top: 10rem;
+}
+footer li {
+  display: inline-block;
+  float: none;
+}
+
+.fab {
+  color: #383636;
+  margin-left: 10px;
+}
+
+.fa-instagram:hover, .fa-pinterest-p:hover, .fa-youtube:hover, .fa-twitter:hover, .fa-facebook:hover {
+  color: #47c7dd;
+  background-color: transparent;
+  font-size: 50px;
+  transition: all 500ms ease;
+  border: none;
+}
+
+.social {
+  padding: 0 auto;
+}
+
+/* -----------------------------go top -----------------------------*/
+.go-top-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3.3rem;
+  height: 3.3rem;
+  z-index: -1;
+}
+
+.go-top-button {
+  width: 0rem;
+  height: 0rem;
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.go-top-button i {
+  position: absolute;
+  font-size: 1.7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: white;
+  transition: 0.4s;
+}
+
+.show {
+  z-index: 10;
+}
+.show i {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.show .go-top-button {
+  animation: popup 0.3s ease-in-out;
+  width: 3.3rem;
+  height: 3.3rem;
+  z-index: 11;
+}
+
+@keyframes popup {
+  0% {
+    width: 0rem;
+    height: 0rem;
+  }
+  50% {
+    width: 4rem;
+    height: 4rem;
+  }
+  100% {
+    width: 3.3rem;
+    height: 3.3rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
