@@ -9,19 +9,25 @@ html {
 
 /* -----------------------------VARIABLES----------------------------- */
 nav {
-  background-image: linear-gradient(to right, #e0dcdc, #70706f);
+  background-image: linear-gradient(to right, #504e4c, #4b4a48);
 }
 nav .nav-link:hover {
   border: solid 1px;
-  border-color: #47c7dd;
+  border-color: #eed182;
   border-radius: 3%;
   font-size: 20px;
-  transition: all 700ms ease;
+  transition: all 500ms ease;
 }
 
+/* -----------------------------CARDS----------------------------- */
 .card {
-  width: auto;
   margin: auto;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 /* -----------------------------SCROLL----------------------------- */
@@ -43,21 +49,33 @@ nav .nav-link:hover {
   }
 }
 /* -----------------------------BODY----------------------------- */
-body {
-  background-image: linear-gradient(to right, #e0dcdc, #70706f);
-}
 body .row h2 {
   padding: 20px;
   margin-left: 20px;
 }
 
 .carousel, .carousel-inner {
-  max-height: 800px;
+  max-height: 100%;
+  object-fit: scale-down;
 }
 
-.btn {
-  margin-left: 20px;
-  margin-top: 10px;
+.carousel-item {
+  display: block;
+  width: 100%;
+  height: 890px;
+}
+
+@media screen and (max-width: 800px) {
+  .carousel-item {
+    height: 25rem;
+  }
+}
+.carousel-caption {
+  top: 5%;
+}
+
+.parrafo__carousel {
+  color: black;
 }
 
 .titulos {
@@ -67,7 +85,19 @@ body .row h2 {
 }
 .titulos:hover {
   transition: all 700ms ease;
-  color: #47c7dd;
+  color: #eed182;
+  text-decoration: underline;
+}
+
+.titulos__contacto {
+  color: #e9b014;
+  padding: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.titulos__contacto:hover {
+  transition: all 700ms ease;
+  color: #eed182;
   text-decoration: underline;
 }
 
@@ -75,24 +105,70 @@ body .row h2 {
   padding: 10px;
 }
 
+/* -----------------------------BANNER----------------------------- */
+.banner1 {
+  background: url(../img/banner.jpg);
+  float: left;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+.banner1 h3 {
+  background: rgba(0, 0, 0, 0.1);
+  height: 100%;
+  color: #fff;
+  box-sizing: border-box;
+  padding-top: 10%;
+}
+
+.banner2 {
+  background: url(../img/banner2.jpg);
+  float: left;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+.banner2 h3 {
+  background: rgba(0, 0, 0, 0.1);
+  height: 100%;
+  color: #fff;
+  box-sizing: border-box;
+  padding-top: 10%;
+}
+
 /* -----------------------------CONTACTO----------------------------- */
+.body__contacto {
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .formulario {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  background: rgba(44, 44, 43, 0.5);
+  color: #fff;
+  margin-top: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   border-radius: 5px;
   font-family: "Roboto", sans-serif;
-  box-shadow: 7px 14px 40px #000;
+  box-shadow: 7px 14px 40px #1b1b1b;
 }
 
 .form-control {
-  background: #bdb9b9;
+  background: #f1efef;
 }
 
-/* -----------------------------HORARIOS----------------------------- */
-#horarios {
-  padding: 8rem;
+input {
+  background: #e0dede;
 }
 
 /*----------------------------- FOOTER ----------------------------- */
@@ -112,12 +188,12 @@ footer li {
 }
 
 .fab {
-  color: #383636;
+  color: #817676;
   margin-left: 10px;
 }
 
 .fa-instagram:hover, .fa-pinterest-p:hover, .fa-youtube:hover, .fa-twitter:hover, .fa-facebook:hover {
-  color: #47c7dd;
+  color: #eed182;
   background-color: transparent;
   font-size: 50px;
   transition: all 500ms ease;

@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pagina web de Academia Jiu Jitsu Irmaos Club Rio Gallegos">
-  <meta name="keywords" content="bjj, BJJ, Academia, Irmaos, Club, Rio Gallegos, Faixa Preta, de la Riva">
+  <meta name="description" content="Contacto con el autor">
+  <meta name="keywords" content="bjj, BJJ, Historia, Gracie, Brazilian, Arte Marcial, Actualidad">
   <title>Irmaos Club</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,83 +17,71 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light navbar navbar-toggleable-sm">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto text-center">
-        <li class="nav-item active">
-          <a class="nav-item nav-link" href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-item nav-link" href="historia.html">Historia</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-item nav-link" href="linaje.html">Linaje</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-item nav-link" href="horarios.html">Horarios</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-item nav-link" href="contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar navbar-toggleable-sm">
+      <button class="navbar-toggler btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto text-center">
+          <li class="nav-item active ">
+            <a class="nav-item nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-item nav-link" href="historia.html">Historia</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-item nav-link" href="escuelas.html">Escuelas</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-item nav-link" href="reglamentos.html">Reglamento</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-item nav-link" href="faixas.html">Graduaciones</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-item nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
 
-  </nav>
+    </nav>
+  </header>
 </header>
 
-<body class="colorbody">
-  <h1 class="titulos">Contacto</h1>
+<body class="body__contacto">
+  <h1 class="titulos__contacto">Contacto</h1>
   <div class="bodi">
-    <div id="formu" class=container>
+    <div class=container>
       <form class="formulario">
         <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Nombre</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Nombre">
+         
+          <div class="form-group col-md-12 col-sm-12">
+            <label for="inputText4">Nombre</label>
+            <input type="text" class="form-control" id="inputText4">
           </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Correo</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Correo">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputAddress">Direccion</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="Calle">
-        </div>
-        <div class="form-group">
-          <label for="inputAddress2">Casa</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Numero Casa">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">Ciudad</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="form-group col-md-4">
-            <label for="inputState">Provincia</label>
-            <select id="inputState" class="form-control">
-              <option selected>Santa Cruz</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Codigo Postal</label>
-            <input type="text" class="form-control" id="inputZip">
+          <div class="form-group col-md-12 col-sm-12">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
           </div>
         </div>
         <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Los datos son correctos
-            </label>
-          </div>
+          <label for="input">Mensaje</label>
+              <textarea class="form-control" id="inputmessage" name="inputmessage" rows="6" cols="100">
+              </textarea>
         </div>
-        <button type="submit" class="btn btn-outline-secondary">Enviar</button>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Los datos son correctos
+                </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-outline-warning">Enviar</button>
+        </div>
       </form>
     </div>
   </div>
