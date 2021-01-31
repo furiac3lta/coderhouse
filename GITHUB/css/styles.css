@@ -62,10 +62,6 @@ body .row h2 {
   margin-left: 20px;
 }
 
-#instructores {
-  padding-top: 2rem !important;
-}
-
 p {
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -99,6 +95,10 @@ h5 {
 @media screen and (max-width: 800px) {
   .carousel-item {
     height: 25rem;
+  }
+
+  .textos {
+    padding: 0 1em 0 1em;
   }
 }
 .carousel-caption {
