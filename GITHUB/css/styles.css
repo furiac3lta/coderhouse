@@ -22,12 +22,21 @@ nav .nav-link:hover {
 /* -----------------------------CARDS----------------------------- */
 .card {
   margin: auto;
+  padding: 2vh;
+  margin-top: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 .card-img-top {
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   object-fit: cover;
+  margin-top: 5vh;
+}
+
+.card-text {
+  text-align: center;
 }
 
 /* -----------------------------SCROLL----------------------------- */
@@ -52,6 +61,24 @@ nav .nav-link:hover {
 body .row h2 {
   padding: 20px;
   margin-left: 20px;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  padding-left: 0;
+}
+
+.textos {
+  padding: 0 5rem 0 5rem;
+}
+
+h4 {
+  color: #60d9f7;
+}
+
+h5 {
+  color: #f0b7b7;
 }
 
 .carousel, .carousel-inner {
@@ -82,6 +109,7 @@ body .row h2 {
   padding: 1rem;
   margin-top: 3rem;
   margin-bottom: 2rem;
+  font-family: "Oswald", sans-serif;
 }
 .titulos:hover {
   transition: all 700ms ease;
@@ -103,6 +131,8 @@ body .row h2 {
 
 .titulos__logros__parrafo {
   padding: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
 }
 
 /* -----------------------------BANNER----------------------------- */
@@ -122,6 +152,7 @@ body .row h2 {
   color: #fff;
   box-sizing: border-box;
   padding-top: 10%;
+  font-family: "lato", sans-serif;
 }
 
 .banner2 {
@@ -140,6 +171,7 @@ body .row h2 {
   color: #fff;
   box-sizing: border-box;
   padding-top: 10%;
+  font-family: "lato", sans-serif;
 }
 
 /* -----------------------------CONTACTO----------------------------- */
@@ -159,7 +191,7 @@ body .row h2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   border-radius: 5px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   box-shadow: 7px 14px 40px #1b1b1b;
 }
 

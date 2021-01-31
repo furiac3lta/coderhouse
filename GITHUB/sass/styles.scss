@@ -1,16 +1,16 @@
 html{
   scroll-behavior: smooth;
-
 }
 .row{
   margin: 0;
   padding: 0;
  }
-  
+
 /* -----------------------------VARIABLES----------------------------- */
 $color1: rgb(80, 78, 76);
 $color2: rgb(75, 74, 72);
 $color3: rgb(238, 209, 130);
+$font-parrafo:'Lato', sans-serif;
 
 nav{
     background-image: linear-gradient(to right, $color1, $color2);
@@ -20,17 +20,25 @@ nav{
       border-radius: 3%;
       font-size: 20px;
       transition: all 500ms ease;
+      
     }
 }
 /* -----------------------------CARDS----------------------------- */
 .card{
-// width: auto;
 margin: auto;
+padding: 2vh;
+margin-top: 5px;
+margin-left: 3px;
+margin-right: 3px;
 }
 .card-img-top {
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   object-fit: cover;
+  margin-top: 5vh;
+}
+.card-text{
+  text-align: center;
 }
 /* -----------------------------SCROLL----------------------------- */
 .animado{
@@ -50,7 +58,7 @@ margin: auto;
 }
 /* -----------------------------BODY----------------------------- */
 body{
-  // background-image: linear-gradient(to right, $color1, $color2);
+
   .row{
       h2{
         padding: 20px;
@@ -58,6 +66,20 @@ body{
       }
   }
 }
+p{
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  padding-left: 0;
+  
+}
+.textos{
+  padding: 0 5rem 0 5rem;
+}
+h4{
+color: rgb(96, 217, 247);
+}
+h5{
+color: rgb(240, 183, 183);}
 .carousel ,.carousel-inner{
   max-height: 100%;
   object-fit: scale-down;
@@ -79,17 +101,20 @@ body{
   top: 5%;
 }
 .parrafo__carousel{
-color: rgb(0, 0, 0)}
+color: rgb(0, 0, 0);
+}
 
 .titulos{
   padding: 1rem;
   margin-top: 3rem;
   margin-bottom: 2rem;
+  font-family: 'Oswald', sans-serif;
+  
   &:hover{
-    // font-size: 60px;
     transition: all 700ms ease;
     color: $color3;
     text-decoration: underline;
+    
   }
 }
 .titulos__contacto{
@@ -97,15 +122,18 @@ color: rgb(0, 0, 0)}
   padding: 1rem;
   margin-top: 3rem;
   margin-bottom: 2rem;
+  
   &:hover{
-    // font-size: 60px;
     transition: all 700ms ease;
     color: $color3;
     text-decoration: underline;
+    
   }
 }
 .titulos__logros__parrafo{
   padding: 10px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
 }
 
 /* -----------------------------BANNER----------------------------- */
@@ -124,8 +152,12 @@ color: rgb(0, 0, 0)}
       color: #fff;
       box-sizing: border-box;
       padding-top: 10%;
-    }
+      font-family: 'lato', sans-serif;
+      
+      }
 }
+
+
 .banner2{
   background: url(../img/banner2.jpg);
   float: left;
@@ -141,6 +173,7 @@ color: rgb(0, 0, 0)}
       color: #fff;
       box-sizing: border-box;
       padding-top: 10%;
+      font-family: 'lato', sans-serif;
     }
 }
 
@@ -154,14 +187,13 @@ color: rgb(0, 0, 0)}
 .formulario{
   background: rgba(44, 44, 43, 0.5);
   color: #fff;
-  
   margin-top: 2rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   border-radius: 5px;
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-parrafo;
   box-shadow: 7px 14px 40px rgb(27, 27, 27);
 }
 .form-control{
