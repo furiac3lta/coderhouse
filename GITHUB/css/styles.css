@@ -19,7 +19,7 @@ nav .nav-link:hover {
   transition: all 500ms ease;
 }
 
-/* -----------------------------CARDS----------------------------- */
+/* -----------------------------CARDS DE BOOTSTRAP----------------------------- */
 .card {
   margin: auto;
   padding: 2vh;
@@ -38,7 +38,7 @@ nav .nav-link:hover {
   text-align: center;
 }
 
-/* -----------------------------SCROLL----------------------------- */
+/* -----------------------------EFECTO SCROLL----------------------------- */
 .animado {
   opacity: 0;
   transition: all 0.8s;
@@ -92,15 +92,6 @@ h5 {
   height: 890px;
 }
 
-@media screen and (max-width: 800px) {
-  .carousel-item {
-    height: 25rem;
-  }
-
-  .textos {
-    padding: 0 1em 0 1em;
-  }
-}
 .carousel-caption {
   top: 5%;
 }
@@ -133,6 +124,71 @@ h5 {
   text-decoration: underline;
 }
 
+/* -----------------------------VERSION MOBILE----------------------------- */
+/*----------- iPhone 6, 6S, 7 and 8 -----------*/
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .carousel-item {
+    height: 15rem;
+  }
+
+  .textos {
+    padding: 0 1em 0 1em;
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .carousel-item {
+    height: 20rem;
+  }
+
+  .textos {
+    padding: 0 1em 0 1em;
+  }
+}
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .carousel-item {
+    height: 20rem;
+  }
+
+  .textos {
+    padding: 0 1em 0 1em;
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .carousel-item {
+    height: 23rem;
+  }
+
+  .textos {
+    padding: 0 1em 0 1em;
+  }
+}
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .carousel-item {
+    height: 30rem;
+  }
+
+  .textos {
+    padding: 0 1em 0 1em;
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .carousel-item {
+    height: 30rem;
+  }
+
+  .textos {
+    padding: 0 1em 0 1em;
+  }
+}
+/* ----------------------------- FIN VERSION MOBILE----------------------------- */
 /* -----------------------------BANNER----------------------------- */
 .banner1 {
   background: url(../img/banner.jpg);
@@ -247,7 +303,7 @@ footer li {
   padding: 0 auto;
 }
 
-/* -----------------------------go top -----------------------------*/
+/* -----------------------------FLECHA IR A ARRIBA-----------------------------*/
 .go-top-container {
   position: fixed;
   bottom: 2rem;
